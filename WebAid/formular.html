@@ -20,7 +20,7 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.post("form.php", $("form").serialize());
+        $.post("aidForm.php", $("anmalan").serialize());
 
     });
 });
@@ -50,22 +50,22 @@ $(document).ready(function(){
       <input type="radio" name="logo" value="nej"> Nej
   </div>
         
-   <div class="form-group1">
+   <div class="form-group">
     <label for="textinput">Vad gör eran organisationen för något?</label>
     <input type="text" name="info" class="form-control" id="formGroupExampleInput3" placeholder="null">
   </div>
         
-     <div class="form-group2">
+     <div class="form-group">
     <label for="textinput">Vad ska vara sidans fokus</label>
     <input type="text" name="focus" class="form-control" id="formGroupExampleInput4" placeholder="t.ex. att visa info">
   </div>
     
-  <div class="form-group3">
+  <div class="form-group">
     <label for="textinput">Hur önskar ni att sidan ska se ut?</label>
     <input type="text" name="designWish" class="form-control" id="formGroupExampleInput5" placeholder="Färger, navigation mm.">
   </div>
         
-  <div class="form-group4">
+  <div class="form-group">
     <label for="textinput">När önskar ni att sidan är klar?</label>
     <input type="text" name="deadWish" class="form-control" id="formGroupExampleInput6" placeholder="t.ex. om 1 månad">
   </div> 

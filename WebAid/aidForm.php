@@ -12,7 +12,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO form (orgname, logo, info, focus, designWish, deadWish, mail, tele)
+$sql = "INSERT INTO anmalan (orgname, logo, info, focus, designWish, deadWish, mail, tele)
 VALUES ('$_POST[orgname]', '$_POST[logo]', '$_POST[info]', '$_POST[focus]', '$_POST[designWish]', '$_POST[deadWish]', '$_POST[mail]', '$_POST[tele]')";
 
 if (mysqli_query($conn, $sql)) {
