@@ -42,41 +42,16 @@ $(document).ready(function(){
 </head>
 
 <body>
+    <div class="formalia">
+  <h2>Login to your account</h2>
+  <form>
+    <input type="text" name="field1" placeholder="Full Name" />
+    <input type="email" name="field2" placeholder="Email" />
+    <input type="url" name="field3" placeholder="Website" />
+    <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+    <input type="button" value="Send Message" />
+  </form>
+</div>
 
-<div class = "formalia" style = "background-color:rgba(0, 0, 0, 0.5);">
-    <form>
-        
-  <!-- <div class="form-group">
-   <!-- <label for="textinput">Organisationens namn?</label> -->
-    <input type="text" name="orgname" class="form-control" id="formGroupExampleInput" placeholder="Organisationens namn?!">
-<!--  </div> -->
-    <br>
-    
-  <div class="form-group">
-    <label for="textinput">Har ni en logga?</label>
-      <input type="radio" name="logo" value="ja"> Ja
-      <input type="radio" name="logo" value="nej"> Nej
-  </div>
-        
-
-    <input type="text" name="info" class="form-control" id="formGroupExampleInput3" placeholder="Vad gör eran organisationen för något?">
-
-    <input type="text" name="focus" class="form-control" id="formGroupExampleInput4" placeholder="Vad ska vara sidans fokus">
-    
-    <input type="text" name="designWish" class="form-control" id="formGroupExampleInput5" placeholder="Hur önskar ni att sedan ska se ut?">
-        
-    <input type="text" name="deadWish" class="form-control" id="formGroupExampleInput6" placeholder="När önskar ni att sidan ska vara klar?">
-        
-  <div class="form-group">
-    <label for="textinput">Kontaktinfo</label>
-    <input type="text" name="mail" class="form-control" id="formGroupExampleInput7" placeholder="Mail">
-    <input type="text" name="tele" class="form-control" id="formGroupExampleInput8" placeholder="Telefonnummer">
-
-  </div>
-        
-    <input type="button" value="Send" />
-</form>
-    </div>
-    
     </body>
 </html>

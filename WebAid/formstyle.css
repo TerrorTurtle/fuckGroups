@@ -1,11 +1,11 @@
-.form-group {
-    width: 200px; 
-    
+/*.form-group {
+    width: 500px;
+    margin-left: 5px;
+
 }
 
-.infield {
-    margin-left: 50px;
-}
+*/
+
 
 .formalia{
     font-family: 'Open Sans Condensed', arial, sans;
@@ -53,6 +53,7 @@
     margin-bottom: 10px;
     font: 16px Arial, Helvetica, sans-serif;
     height: 45px;
+
 }
 .formalia textarea{
     resize:none;
