@@ -4,8 +4,14 @@
 
 }
 
+<<<<<<< HEAD
 */
 
+=======
+.infield {
+    margin-left: 50px;
+}
+>>>>>>> origin/master
 
 .formalia{
     font-family: 'Open Sans Condensed', arial, sans;
@@ -53,7 +59,10 @@
     margin-bottom: 10px;
     font: 16px Arial, Helvetica, sans-serif;
     height: 45px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
 .formalia textarea{
     resize:none;
