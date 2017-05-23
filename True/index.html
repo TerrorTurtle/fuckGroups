@@ -17,21 +17,19 @@
         
         <link rel="stylesheet" type="text/css" href="style.css">
         
+        <link rel="stylesheet" type="text/css" href="formstyle.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         
         <script src="script.js"></script>
         
         <script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $.post("aidForm.php", $("anmalan").serialize());
-
-    });
-});
-</script>
-
-
-            <link rel="stylesheet" type="text/css" href="css/formstyle.css">
+            $(document).ready(function(){
+            $("button").click(function(){
+            $.post("form.php", $("form").serialize());
+            });
+            });
+        </script>
     </head>
 
     <body>
@@ -42,40 +40,29 @@ $(document).ready(function(){
         
         <main>
             
-        <div class = "formalia" style = "background-color:rgba(0, 0, 0, 0.5);">
+<div class = "formalia" style = "background-color:rgba(0, 0, 0, 0.5);">
     <form>
         
-  <div class="form-group">
-    <label for="textinput">Organisationens namn?</label>
-    <input class="infield" type="text" name="orgname" class="form-control" id="formGroupExampleInput" placeholder="Morgan Doe">
-  </div>
+  <!-- <div class="form-group">
+   <!-- <label for="textinput">Organisationens namn?</label> -->
+    <input type="text" name="orgname" class="form-control" id="formGroupExampleInput" placeholder="Organisationens namn?!">
+<!--  </div> -->
     <br>
     
   <div class="form-group">
     <label for="textinput">Har ni en logga?</label>
-      <input type="radio" name="logo" value="ja"> Ja
-      <input type="radio" name="logo" value="nej"> Nej
+      <input type="radio" name="logo" value="ja"><span class="ans"> Ja </span>
+      <input type="radio" name="logo" value="nej"><span class="ans"> Nej </span>
   </div>
         
-   <div class="form-group">
-    <label for="textinput">Vad gör eran organisationen för något?</label>
-    <input type="text" name="info" class="form-control" id="formGroupExampleInput3" placeholder="null">
-  </div>
-        
-     <div class="form-group">
-    <label for="textinput">Vad ska vara sidans fokus</label>
-    <input type="text" name="focus" class="form-control" id="formGroupExampleInput4" placeholder="t.ex. att visa info">
-  </div>
+
+    <input type="text" name="info" class="form-control" id="formGroupExampleInput3" placeholder="Vad gör eran organisationen för något?">
+
+    <input type="text" name="focus" class="form-control" id="formGroupExampleInput4" placeholder="Vad ska vara sidans fokus">
     
-  <div class="form-group">
-    <label for="textinput">Hur önskar ni att sidan ska se ut?</label>
-    <input type="text" name="designWish" class="form-control" id="formGroupExampleInput5" placeholder="Färger, navigation mm.">
-  </div>
+    <input type="text" name="designWish" class="form-control" id="formGroupExampleInput5" placeholder="Hur önskar ni att sedan ska se ut?">
         
-  <div class="form-group">
-    <label for="textinput">När önskar ni att sidan är klar?</label>
-    <input type="text" name="deadWish" class="form-control" id="formGroupExampleInput6" placeholder="t.ex. om 1 månad">
-  </div> 
+    <input type="text" name="deadWish" class="form-control" id="formGroupExampleInput6" placeholder="När önskar ni att sidan ska vara klar?">
         
   <div class="form-group">
     <label for="textinput">Kontaktinfo</label>
@@ -84,14 +71,11 @@ $(document).ready(function(){
 
   </div>
         
-    <button >Submit it</button>
+    <input type="button" value="Send" />
 </form>
     </div>
         
         </main>
         
-        <footer>
-        
-        </footer>
     </body>
 </html>
